@@ -1,0 +1,14 @@
+<h1>Characters</h1>
+<div class="row">
+<section ng-repeat="character in $ctrl.characters">
+	
+		<div class="col s12 m3">
+			<div class="card">
+				<span class="card-title">{{character.name}}</span>
+            	<div class="card-content">
+            		<img ng-src="{{character.thumbnail.path + '.' + character.thumbnail.extension}}" class="responsive-img" alt="">
+            	</div>
+			</div>
+		</div>
+</section>
+</div>
